@@ -72,7 +72,7 @@ If the input expression is type `VARCHAR`, the separator cannot be type `NVARCHA
 
 Null values are ignored and the corresponding separator is not added. To return a place holder for null values, use the `ISNULL` function as demonstrated in example B.
 
-`STRING_AGG` is available in any compatibility level.
+`STRING_AGG` is available in any compatibility level. 
 
 ## Examples 
 
@@ -89,6 +89,7 @@ FROM Person.Person;
 |Syed <br />Catherine <br />Kim <br />Kim <br />Kim <br />Hazem <br />... | 
 
 `NULL` values found in `name` cells are not returned in result.   
+A `GROUP BY` clause is not required when `STRING_AGG` is the only item in the select list.   
 > [!NOTE]  
 >  If using the Management Studio Query Editor, the **Results to Grid** option cannot implement the carriage return. Switch to **Results to Text** to see the result set properly.   
 
